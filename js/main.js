@@ -1,5 +1,7 @@
 cardsContainer = document.getElementById("cards");
 
+
+/*** OGGETTO TEAM ***/
 const team = [
     {
         image: "wayne-barnett-founder-ceo.jpg",
@@ -33,6 +35,8 @@ const team = [
     },
 ];
 
+
+/*** CICLO, CREA GLI ELEMENTI CARD-ITEM NEL DIV HTML E ALL'INTERNO CREA IMMAGINE E PARAGRAFI CONTENENTI DATI OGGETTI ***/
 for (let i = 0; i < team.length; i++) {
 
     const newCard = document.createElement("div")
