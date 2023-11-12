@@ -1,3 +1,5 @@
+cardsContainer = document.getElementById("cards");
+
 const team = [
     {
         image: "wayne-barnett-founder-ceo.jpg",
@@ -30,3 +32,13 @@ const team = [
         role: "Graphic Designer"
     },
 ];
+
+for (let i = 0; i < team.length; i++) {
+
+    const newCard = document.createElement("div")
+    newCard.classList.add("card-item");
+    newCard.innerHTML += `<img src="../img/${team[i].image}">`;    
+    newCard.innerHTML += `<p>${team[i].name}</p>`;
+    newCard.innerHTML += `<p>${team[i].role}</p>`;
+    cardsContainer.appendChild(newCard);
+}
