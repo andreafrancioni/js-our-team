@@ -37,8 +37,9 @@ for (let i = 0; i < team.length; i++) {
 
     const newCard = document.createElement("div")
     newCard.classList.add("card-item");
-    newCard.innerHTML += `<img src="../img/${team[i].image}">`;    
-    newCard.innerHTML += `<p>${team[i].name}</p>`;
-    newCard.innerHTML += `<p>${team[i].role}</p>`;
+    newCard.classList.add("mb-5");
+    newCard.innerHTML += `<img class="pb-3" src="../img/${team[i].image}">`;    
+    newCard.innerHTML += `<p id="name">${team[i].name}</p>`;
+    newCard.innerHTML += `<p id="role" class="pb-3">${team[i].role}</p>`;
     cardsContainer.appendChild(newCard);
 }

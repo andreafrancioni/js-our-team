@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: papayawhip
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.card-item{
+    background-color: white;
+    width: calc((100% / 3) - 60px);
+    
+}
+
+.card-item img{
+    width: 100%;
+}
+
+.card-item #name{
+    font-family: Didot, serif;
+    font-size: 1.5rem;
+}
